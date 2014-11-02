@@ -1,0 +1,4 @@
+archive/*
+*.old
+*.pyc
+pollsters.p

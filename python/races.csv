@@ -1,0 +1,20 @@
+State,Democrat,Republican,Assumption if no data,Note,URL to get CSV directly
+AK,Begich,Sullivan,0,Only want Sullivan (probable GOP nominee) data - could change later,http://elections.huffingtonpost.com/pollster/2014-alaska-senate-sullivan-vs-begich
+AR,Pryor,Cotton,-4,,http://elections.huffingtonpost.com/pollster/2014-arkansas-senate-cotton-vs-pryor
+CO,Udall,Gardner,1,,http://elections.huffingtonpost.com/pollster/2014-colorado-senate-gardner-vs-udall
+GA,Nunn,Perdue,1,,http://elections.huffingtonpost.com/pollster/2014-georgia-senate-perdue-vs-nunn
+HI,Schatz,,50,"don't track, Democratic primary is in database and will mess up any calculation",
+IA,Braley,Ernst,-1,Only want Ernst,http://elections.huffingtonpost.com/pollster/2014-iowa-senate-ernst-vs-braley
+KS,Orman,Roberts,10,,http://elections.huffingtonpost.com/pollster/2014-kansas-senate-roberts-vs-orman-vs-taylor
+KY,Grimes,McConnell,-3,"Only want McConnell, don't want Bevin. Sometimes Grimes is named Lundergan",http://elections.huffingtonpost.com/pollster/2014-kentucky-senate-mcconnell-vs-grimes
+LA,Landrieu,Cassidy,-3,Make sure no primary data - only want Landrieu v Cassidy head-to-head,http://elections.huffingtonpost.com/pollster/2014-louisiana-senate-cassidy-vs-landrieu
+MI,Peters,Land,6,,http://elections.huffingtonpost.com/pollster/2014-michigan-senate-land-vs-peters
+MN,Franken,McFadden,11,,http://elections.huffingtonpost.com/pollster/2014-minnesota-senate-mcfadden-vs-franken
+MS,Childers,Cochran,-14.5,"Only want Cochran v Childers, ignore McDaniel",http://elections.huffingtonpost.com/pollster/2014-mississippi-senate-cochran-vs-childers
+MT,Curtis,Daines,-18,,
+NC,Hagan,Tillis,4,Third party candidate is Haugh - ignore his number,http://elections.huffingtonpost.com/pollster/2014-north-carolina-senate-tillis-vs-hagan
+NH,Shaheen,Brown,10,,http://elections.huffingtonpost.com/pollster/2014-new-hampshire-senate-brown-vs-shaheen
+OR,Merkley,Wehby,10,,http://elections.huffingtonpost.com/pollster/2014-oregon-senate-wehby-vs-merkley
+SD,Weiland,Rounds,-14,Three-way race - could later become Pressler v Rounds - watch this,http://elections.huffingtonpost.com/pollster/2014-south-dakota-senate-rounds-vs-weiland
+VA,Warner,Gillespie,16,,http://elections.huffingtonpost.com/pollster/2014-virginia-senate-gillespie-vs-warner
+WV,Tennant-s,Capito,-11,Sometimes Capito might be called Moore,http://elections.huffingtonpost.com/pollster/2014-west-virginia-senate-capito-vs-tennant
