@@ -33,7 +33,7 @@ while [ $day -le $last_day ]; do
 
     tail -$amount $POLLS.master > $POLLS
 
-    matlab -nodisplay -r Senate_runner1 2>&1 > /dev/null
+    matlab -nodisplay -r Senate_runner 2>&1 > /dev/null
 
     day=$((day+1))
 done

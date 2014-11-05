@@ -18,23 +18,31 @@
 #
 ############################################################################
 
-# For debugging cron issues
-/bin/date
-
 POLLS=2014.Senate.polls.median.txt 
 
 cd /web/python/
-./update_polls.py
 
-# Auxiliary stuff
+# Continue doing Obama calculations
 wget http://elections.huffingtonpost.com/pollster/obama-job-approval.csv
-wget http://elections.huffingtonpost.com/pollster/2014-national-house-race.csv
 python convert_huffpost_csv.py obama-job-approval.csv obama_approval_matlab.csv pollsters.p
-python convert_huffpost_csv.py 2014-national-house-race.csv house_race_matlab.csv pollsters.p
 mv obama-job-approval.csv archive/
-mv 2014-national-house-race.csv archive/
 mv obama_approval_matlab.csv ../matlab/
+
+# After 8:00AM on 11/4, stop all other calculations
+SEC=`date '+%s'`
+STOP_SEC=`date -d '2014-11-04 08:00' '+%s'`
+if [ $(($SEC - $STOP_SEC)) -gt 0 ]; then
+	echo 'After Election Day, so only running Obama';
+	exit;
+fi
+
+wget http://elections.huffingtonpost.com/pollster/2014-national-house-race.csv
+python convert_huffpost_csv.py 2014-national-house-race.csv house_race_matlab.csv pollsters.p
+mv 2014-national-house-race.csv archive/
 mv house_race_matlab.csv ../matlab/
+
+
+./update_polls.py
 cd ..
 
 cp -f python/$POLLS matlab/
@@ -86,5 +94,3 @@ cp output/Senate_estimate_history.csv matlab/ # put this back -- it's needed for
 #chmod a+r autotext/*
 #chmod a+r autographics/*
 
-# For debugging cron issues
-/bin/date

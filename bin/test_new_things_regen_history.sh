@@ -17,6 +17,7 @@
 ############################################################################
 
 exit # This isn't ready yet. Don't run it
+
 HISTORY=Senate_estimate_history.csv
 
 cd /web/python/
